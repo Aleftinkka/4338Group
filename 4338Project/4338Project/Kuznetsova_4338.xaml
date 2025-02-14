@@ -7,9 +7,25 @@
         mc:Ignorable="d"
         Title="Kuznetsova_4338" Height="450" Width="800">
     <Grid>
-        <StackPanel>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="11*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
             <Button Click="Button_Click">Нажми на меня</Button>
         </StackPanel>
-        
+
+        <Grid Grid.Row="2">
+            <Button x:Name="BnImport" Click="BnImport_Click">Импорт данных</Button>
+        </Grid>
+        <Grid Grid.Row="5">
+            <Button x:Name="BnExport" Click="BnExport_Click">Экспорт в Excel</Button>
+        </Grid>
     </Grid>
 </Window>
